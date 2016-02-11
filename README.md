@@ -15,6 +15,7 @@ https://jsfiddle.net/100lp/mq460b56/
 без использования цикла ;
 var obj = { test1: {a: 1, b: 5, c: -12}, test2: {i: 12, x: 18} }; var mask = { test1: 'b', test2: 'x' };
 
+<pre><code>
 var obj = { test1: {a: 1, b: 5, c: -12}, test2: {i: 12, x: 18} };
 var mask = { test1: 'b', test2: 'x' };
 
@@ -27,7 +28,7 @@ for (var key in obj) {
 
 console.log(obj.test1[mask.test1]);
 console.log(obj.test2[mask.test2]);
-
+</code></pre>
 
 Создайте функцию isEmpty(obj), которая возвращает true, если в объекте нет свойств и false – если хоть одно свойство есть. (https://learn.javascript.ru/object-for-in)
 
