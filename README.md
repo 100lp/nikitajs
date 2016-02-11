@@ -15,7 +15,7 @@ https://jsfiddle.net/100lp/mq460b56/
 без использования цикла ;
 var obj = { test1: {a: 1, b: 5, c: -12}, test2: {i: 12, x: 18} }; var mask = { test1: 'b', test2: 'x' };
 
-<pre><code>
+```javascript
 var obj = { test1: {a: 1, b: 5, c: -12}, test2: {i: 12, x: 18} };
 var mask = { test1: 'b', test2: 'x' };
 
@@ -28,10 +28,12 @@ for (var key in obj) {
 
 console.log(obj.test1[mask.test1]);
 console.log(obj.test2[mask.test2]);
-</code></pre>
+```
+
 
 Создайте функцию isEmpty(obj), которая возвращает true, если в объекте нет свойств и false – если хоть одно свойство есть. (https://learn.javascript.ru/object-for-in)
 
+```javascript
 function isEmpty(obj) {
   var counter = 0;
 
@@ -47,10 +49,11 @@ var obj2 = { test1: 'b', test2: 'x' };
 
 console.log(isEmpty(obj1));
 console.log(isEmpty(obj2));
-
+```
 
 Создайте функцию multiplyNumeric, которая получает объект и умножает все численные свойства на 2. (https://learn.javascript.ru/object-for-in)
 
+```javascript
 function multiplyNumeric(obj) {
   for (var key in obj) {
     if (typeof obj[key] === "number") {
@@ -65,5 +68,5 @@ function multiplyNumeric(obj) {
 var obj = {test1: 7, test2: 4, test3: "6", test4: []};
 
 console.log(multiplyNumeric(obj));
-
+```
 
