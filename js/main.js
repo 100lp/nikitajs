@@ -9,10 +9,10 @@ var mask = { test1: 'b', test2: 'x' };
 
 var result;
 
-for (var key in obj) {
-  result = obj[key][mask[key]];
-  console.log(key + ": " + result);
-};
+// for (var key in obj) {
+//   result = obj[key][mask[key]];
+//   console.log(key + ": " + result);
+// };
 
-console.log(obj.test1[mask.test1]);
-console.log(obj.test2[mask.test2]);
+// console.log(obj.test1[mask.test1]);
+// console.log(obj.test2[mask.test2]);
