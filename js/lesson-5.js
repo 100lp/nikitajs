@@ -65,7 +65,7 @@ var localesManager = {
                 result = resultClone;
             }
 
-            if (obj.desc === "asc") {
+            if (obj.desc) {
               var arr = [];
               var resultClone = {};
 
@@ -73,7 +73,9 @@ var localesManager = {
                 arr.push(key);
               }
 
-              arr = arr.reverse();
+              if (obj.desc === "asc") {
+                 arr = arr.reverse();
+              }
 
               for (var i = 0; i < arr.length; i++) {
                 resultClone[arr[i]] = result[arr[i]];
@@ -99,6 +101,8 @@ var desc = localesManager.getLocales({ desc: "asc" });
 var mix = localesManager.getLocales({ select: ['en', 'ru', 'es'], ignore: ['en']});
 var descMix = localesManager.getLocales({select: ['en', 'ru', 'es'], ignore: ['en'], desc: "asc" });
 var descIgnore = localesManager.getLocales({ignore: ['en'], desc: "asc" });
+var descIgnoreDesc = localesManager.getLocales({ignore: ['en'], desc: "desc" });
+
 
 console.log(empty);
 console.log(select);
@@ -107,3 +111,4 @@ console.log(desc);
 console.log(mix);
 console.log(descMix);
 console.log(descIgnore);
+console.log(descIgnoreDesc);
