@@ -10,7 +10,8 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/modal.css">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -18,8 +19,27 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-dshfvjsah sadgsdg
+        <a href="#openModal">Open Modal</a>
+
+        <div id="openModal" class="modalDialog">
+            <div>
+              <a href="#close" title="Close" class="close">X</a>
+
+              <div class="header">Modal Box</div>
+              <div class="body">
+                <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+                <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+              </div>
+            </div>
+        </div>
+<!--         <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div class="myModal">
+          <div class="myModal_header">Title</div>
+          <div class="myModal_body">
+          A top Australian university has rejected claims it is trying to rewrite the nation's colonial history.
+          Students are being encouraged to use the term "invaded" rather than "settled" or "discovered", and avoid the word "Aborigines".</div>
+          <div class="myModal_footer">cancel, next</div>
+        </div> -->
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
